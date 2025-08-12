@@ -229,12 +229,24 @@ export default function App() {
             {prettyDayMonth} de {targetDate.getFullYear()}
           </p>
 
+          {/* Imagen destacada debajo del título */}
+  <div className="mt-6 flex justify-center">
+    <img
+      src={bgUrl}
+      alt={selectedName}
+      className="rounded-2xl shadow-lg max-w-full sm:max-w-2xl object-cover"
+    />
+  </div>
+
           <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-3xl mx-auto">
             <TimeTile label="DÍAS" value={time.days} />
             <TimeTile label="HORAS" value={time.hours} />
             <TimeTile label="MINUTOS" value={time.minutes} />
             <TimeTile label="SEGUNDOS" value={time.seconds} />
           </div>
+
+          
+
 
           {isOver && (
             <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur px-4 py-2 rounded-full shadow mt-6 text-slate-900">
