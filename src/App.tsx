@@ -152,7 +152,7 @@ export default function App() {
     <div className="flex flex-col sm:flex-row sm:items-start gap-4">
       <div className="flex-1">
         <label className="mb-1 block text-sm font-medium text-slate-800">
-          Dedicatoria
+          Escribe a Lidia y elige una imagen. Luego comparte...
         </label>
         <input
           className="h-11 w-full rounded-xl border border-slate-300 bg-white px-3 outline-none focus:ring-2 focus:ring-indigo-500"
