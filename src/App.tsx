@@ -128,7 +128,7 @@ export default function App() {
         </section>
 
         <footer className="mt-10 text-center text-xs text-white/80 drop-shadow">
-          Hecho con ♥ por <a className="underline decoration-white/40 hover:decoration-white" href="https://github.com/VaninaClara" target="_blank" rel="noreferrer">Vanina</a> — editable, accesible y responsive.
+          Hecho con ♥ por <a className="underline decoration-white/40 hover:decoration-white" href="" target="_blank" rel="noreferrer">Vanina</a> — editable, accesible y responsive.
         </footer>
       </div>
 
