@@ -149,14 +149,20 @@ export default function App() {
 
 function TimeTile({ label, value }: { label: string; value: number }) {
   return (
-    <div className="bg-white/90 backdrop-blur rounded-2xl shadow-lg p-4 sm:p-6 text-center border border-white/60">
-      <div key={value} className="font-extrabold text-4xl sm:text-5xl tabular-nums animate-[pop_.35s_cubic-bezier(.2,.9,.3,1.4)]">
+    <div className="bg-indigo-600/90 backdrop-blur rounded-2xl shadow-lg p-4 sm:p-6 text-center border border-indigo-400">
+      <div
+        key={value}
+        className="font-extrabold text-4xl sm:text-5xl tabular-nums text-white animate-[pop_.35s_cubic-bezier(.2,.9,.3,1.4)]"
+      >
         {String(value).padStart(2, "0")}
       </div>
-      <div className="mt-1 text-xs sm:text-sm text-slate-600 uppercase tracking-wide">{label}</div>
+      <div className="mt-1 text-xs sm:text-sm text-white uppercase tracking-wide">
+        {label}
+      </div>
     </div>
   );
 }
+
 
 // 🎊 Confeti alegre
 function launchConfetti() {
