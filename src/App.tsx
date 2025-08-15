@@ -69,11 +69,13 @@ export default function App() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/40 via-black/30 to-white/70" />
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6 py-8 sm:py-12">
-        {/* Encabezado pequeño */}
-        <header className="flex items-center justify-between gap-4 text-white drop-shadow">
-          <h1 className="text-lg sm:text-xl font-semibold">🎉 Cuenta regresiva de cumpleaños 🎉</h1>
-          <span className="hidden sm:inline text-white/90 text-sm">⏱️ Actualiza cada segundo</span>
-        </header>
+  {/* Encabezado grande y centrado */}
+  <header className="text-center text-white drop-shadow">
+    <h1 className="text-3xl sm:text-5xl font-extrabold tracking-wide">
+      🎉 Cuenta regresiva 🎉
+    </h1>
+  </header>
+
 
         {/* Panel: solo selector de fotos */}
         <section className="mt-6 rounded-2xl bg-white/75 backdrop-blur-md shadow-xl p-4 sm:p-6">
